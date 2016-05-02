@@ -3,7 +3,6 @@
 first commit
 
 # Screenshots
-
 ===
 ![](https://github.com/wangguoihui/android_amap/blob/master/screenshots/Screenshot_01.png)
 ===
