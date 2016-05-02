@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8EAEC"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="12dp" >
+           
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:text="位置"
+            android:textColor="#48bfea"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/address_add"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:paddingRight="12dp"
+            android:text="@null"
+            android:textColor="#48bfea"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="0"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="位置"
+            android:textColor="#999999"
+            android:layout_marginLeft="12dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/attend_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#48bfea"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/attend_map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ListView
+            android:id="@+id/address_list"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:cacheColorHint="#ffffff"
+            android:divider="#E1E4E9"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
